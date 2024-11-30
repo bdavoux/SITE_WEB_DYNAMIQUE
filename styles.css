@@ -1,0 +1,677 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header img {
+    display: block; /* Assure que l'image est un bloc */
+    margin: 0 auto;/* Centre l'image horizontalement */
+    max-width: 20%;
+    height: auto;
+  }
+  
+  
+  .header .links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #6AB12F;
+    font-style: bold;
+  }
+
+.nav{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+.nav a{
+    color: #ffffffff;
+    text-decoration: none;
+    margin: 10px 25px;
+    border: 5px solid #0066cc; 
+    border-radius: 20px;
+    background-color: #0066cc;
+    padding: 0px 10px;
+    font-size: smaller;
+    
+    
+}
+
+/* Utilisation de media queries pour rendre la barre de navigation responsive */
+@media (max-width: 768px) {
+    .nav {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .nav a {
+      margin: 10px 0; 
+      width: 80%; /* Prend une plus grande largeur pour être plus lisible */
+      text-align: center;
+      padding: 5px 10px;
+    }
+}
+
+.nav a:hover{
+    background-color: #179306;
+    border-color: #179306;
+  }
+  
+.nav a.rubrique_active{
+  
+  color: #6AB12F;
+  
+  }
+.main {
+    background-color: #0043A4;
+    text-align: center;
+    color: #ffffff;
+    padding: 40px 20px;/*faut-il réellement garder les marges?*/
+
+}
+
+.main h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.main img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.main button {
+    background-color: #00cc99;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main button:hover {
+    background-color: #00b386;
+}
+
+.service {
+    background-color: #ffffff;
+    margin: 50px 0px 0px 0px;
+    display: flex;
+    flex-direction: column; /* Ajoute cette ligne pour aligner les éléments verticalement */
+    justify-content: flex-start; /* Aligne en haut */
+    align-items: center; /* Centre horizontalement */
+    width: 100%;
+}
+
+h2 {
+    color: #46c2ec;
+    font-size: 40px;
+    margin: 0; /* Évite les marges supplémentaires par défaut */
+    padding-top: 0;
+    margin-bottom: 20px; /* Ajoute un espace de 20 pixels vers le bas */
+}
+
+.case {
+    border: 5px solid #0066cc; /* Définit la couleur et la largeur de la bordure */
+    border-radius: 20px; /* Définit le rayon des coins arrondis */
+    background-color: #0066cc; /* Définit la couleur de fond */
+    padding: 10px 20px;
+    margin:10px 100px; /* Ajoute une marge autour des div */
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    margin: 10px 100px;
+}
+
+.images img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.1);
+}
+
+.disparaitre {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: black;
+    padding: 5px 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    text-align:center;
+    margin-top:100px;
+}
+
+.image-container:hover .disparaitre {
+    display: block;
+}
+
+
+
+.OuNousTrouver {
+    background-color: #ffffff;
+    display: flex;
+    padding-top:150px;
+    flex-direction: column; /* Ajoute cette ligne pour aligner les éléments verticalement */
+    justify-content: flex-start; /* Aligne en haut */
+    width: 100%;
+
+}
+
+.map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.OuNousTrouver h2{
+    padding-top:10px;
+    padding-bottom:20px;
+}
+.image-right {
+    padding-top:80px; 
+    display: block; 
+    max-width: 80%;
+    margin-right:40px;
+    width:600px;
+    height: 600px;
+    float:right;
+}
+
+.text-left{
+    
+    padding-top:50px;
+    color:#46c2ec; /*augmenter la taille de la police*/
+    flex: 1;
+    padding: 20px;
+    font-size: 25px;
+
+}
+.aDieu video{
+    border: 5px solid black;
+    position: relative;
+    max-width: 100%;
+    
+}
+.AvisClient h2{
+    color:#ffffffff;
+    font-size: 40px;
+    margin-top:40px ; 
+    margin-bottom: 60px; /* Ajoute un espace de 20 pixels vers le bas */
+}
+
+footer {
+    background-color: black;
+    color:white;
+    text-align: center;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+footer h2{
+    color:white;
+}
+
+.footert{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.réseaux img{
+    width:20px;
+    height:auto;
+    margin-right:30px;
+}
+.réseaux{
+    margin-right:30px;
+}
+.mentions{
+ 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+/*--------------------------------------------------------------------------------
+------------------------deuxième feuille Qui sommes nous------------------------*/
+.BandeBleu{
+    margin:10px;
+    padding-top:2px;
+    padding-bottom:2px;
+    background-color: #0043A4;
+    width: 100%;
+}
+
+.BandeBleu h1{
+    color:white;
+    font-size: 35px;
+    
+}
+
+.QuiSommesNous {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.imagemuscle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.texte {
+    flex: 1;
+    font-size: 30px;
+    color:#050505;
+    margin-right: 30px;
+    line-height: 1.5;
+}
+
+.Persomuscle {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+.NosDomaines {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.image img {
+    max-width: 350px;
+    height: auto;
+}
+
+.text_nosdomaines {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+.textDeratisation, .textDesinsectisation {
+    font-size: 24px;
+    text-align: center;
+    width: 150px; 
+}
+
+.textDesinsectisation{
+    margin:0px;
+}
+
+.image img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.ProtegezVosEtablissements {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 1.5;
+
+    
+}
+
+.ProtegezVosEtablissements img {
+    width: 350px;
+    height: auto;
+}
+
+.contentProduits {
+    display: flex;
+    align-items: center;
+}
+
+.texproduits {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+
+.imgecologie {
+    width: 350px;
+    height: auto;
+}
+
+.BandeBleuf{
+    padding-top:30px;
+    padding-bottom:30px;
+    background-color: #0043A4;
+    width: 100%;
+}
+
+/*Mettre la page responsive*/
+@media (max-width: 768px) {
+
+    .imagemuscle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texte {
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .NosDomaines {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text_nosdomaines {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ProtegezVosEtablissements {
+        font-size: 20px;
+    }
+
+    .contentProduits {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texproduits {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+/*--------------------------------------------------------------------------------
+------------------------troisième feuille Invasion de rat------------------------*/
+
+.invasionrat{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.texteinvasionrat img {
+        width: 400px;
+        height: auto;
+    margin-top:40px;
+    margin-bottom:40px;
+    
+}
+
+.rongueur {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 1.5;
+    padding: 50px 20px;
+    flex-direction: row-reverse;
+}
+
+.rongueur img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+}
+
+.texte_rongueur {
+    flex: 1;
+}
+
+.fin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.fin .proposition {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 18px;
+    border: 2px solid #0066cc;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.fin .proposition:hover {
+    background-color: #0066cc;
+    color: #ffffff;
+}
+
+.logo_fin {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+/*Mettre la page responsive*/
+@media (max-width: 768px) {
+    .rongueur {
+        flex-direction: column;
+    }
+
+    .rongueur img {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .fin {
+        flex-direction: column;
+    }
+
+    .fin .proposition {
+        margin: 10px 0;
+    }
+}
+/*--------------------------------------------------------------------------------
+------------------------quatième feuille Invasion de insecte------------------------*/
+.invasioninsecte{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom:20px;
+    
+
+}
+
+.imginvasioninsecte {
+        width: 650px;
+        height: auto;
+    margin-top:40px;
+    margin-bottom:40px;
+
+}
+
+.insecte {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 1.5;
+    padding: 50px 20px;
+    flex-direction: row-reverse;
+}
+
+.insecte img {
+    max-width: 400px;
+    width: auto;
+    height: 500px;
+    margin-left: 20px;
+}
+
+.texte_insecte {
+    flex: 1;
+}
+/*Mettre la page responsive*/
+@media (max-width: 768px) {
+    .imginvasioninsecte {
+        width: 100%;
+        height: auto;
+    }
+
+    .insecte {
+        flex-direction: column;
+    }
+
+    .insecte img {
+        margin-left: 0;
+        margin-top: 20px;
+        height: auto;
+        width: 100%;
+    }
+
+    .texte_insecte {
+        margin-top: 20px;
+    }
+}
+
+/*--------------------------------------------------------------------------------
+------------------------quatrième feuille Nos services------------------------*/
+
+.prestation {
+    color:black;
+    display: flex;
+    margin: 0 auto 20px;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    font-size: 20px;
+    line-height: 1.2;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.prestation h4 {
+    color: #0066cc;
+}
+.prestation button{
+    font-size: 15px;
+    border: 5px solid #0066cc; /* Définit la couleur et la largeur de la bordure */
+    border-radius: 20px;
+    background-color: #0066cc;
+    color:white;
+    padding:0px 10px;
+}
+.prestationhaut, .prestationbas {
+    border: 5px solid #efefef;
+    background-color: #efefef;
+    max-width: 500px;
+    margin: 10px 0; 
+}
+
+.prestationbas {
+    margin-top: 20px; 
+}
+
+.motfin{
+    margin-top:40px;
+    padding:20px;
+    font-size:30px;
+    border: 5px solid #efefef;
+    background-color: #efefef;
+    max-width: 100%px;
+    margin-bottom:40px;
+    color:black;
+}
+
+.buttontext{
+    background-color: #00cc99;
+    color: #ffffff;
+    border: none;
+    padding: 10px 40px;
+    font-size: 30px;
+    border-radius: 5px;
+}

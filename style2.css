@@ -1,0 +1,244 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+main {
+  background-color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  color: #0043A4;
+}
+main img {
+  max-width: 100%;
+  height: saturation;
+  margin-bottom: 0px;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  display: block; /* Assure que l'image est un bloc */
+  margin: 0 auto;/* Centre l'image horizontalement */
+  max-width: 20%;
+  height: auto;
+}
+
+
+.header .links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #6AB12F;
+  font-style: bold;
+}
+
+.nav {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.nav a {
+  color: #ffffffff;
+  text-decoration: none;
+  margin: 10px 25px;
+  border: 5px solid #0066cc; /* Définit la couleur et la largeur de la bordure */
+  border-radius: 20px;
+  background-color: #0066cc;
+  padding: 0px 10px;
+  font-size: smaller;
+  
+  
+}
+
+/* Utilisation de media queries pour rendre la barre de navigation responsive */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .nav a {
+    margin: 10px 0; 
+    width: 80%; 
+    text-align: center;
+    padding: 5px 10px;
+  }
+}
+.nav a:hover{
+  background-color: #179306;
+  border-color: #179306;
+}
+
+nav a.rubrique_active{
+
+color: #6AB12F;
+
+}
+
+.formulaire{
+  background-image: url(images/fond.jpg); 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8; /* Réglez l'opacité pour rendre l'image peu visible */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact {
+    background-color: rgba(255, 255, 255, 0.8); /* Couleur de fond du formulaire avec transparence */
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.rdv{
+  background-image: url(images/fond.jpg); 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8; /* Réglez l'opacité pour rendre l'image peu visible */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+  padding: 10px;
+  background-color: #0043A4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #6AB12F;
+}
+
+
+
+h2{
+  color: #46c2ec;
+}
+
+fieldset {
+  border: 1px solid #6AB12F;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+legend {
+  font-weight: bold;
+  color: #0043A4;
+}
+
+label{
+  color: black;
+}
+
+.main_c {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: black;
+  color:white;
+  text-align: center;
+  align-items: center;
+  padding: 20px 0;
+
+}
+
+footer h2{
+  color:white;
+}
+
+.footert{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.réseaux img{
+  width:20px;
+  height:auto;
+  margin-right:30px;
+}
+.réseaux{
+  margin-right:30px;
+}
+.mentions{
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formconnexion{
+
+  border-radius: 5px;
+  padding: 10px 10px;
+  
+}
+
+.login-container{
+ background-color: #ffffff;
+ border: #0043A4 solid 2px;
+}
+
+.mainc{
+  background-image: url(images/fond.jpg); 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8; /* Réglez l'opacité pour rendre l'image peu visible */
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formconnexioncrea{
+  background-color: #ffffff;
+  border: #6AB12F solid 2px;
+ 
+}
+
